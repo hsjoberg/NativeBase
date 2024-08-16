@@ -35,9 +35,7 @@ const DefaultTabBar = createReactClass({
     accessible: PropTypes.array,
     accessibilityLabel: PropTypes.array
   },
-  contextTypes: {
-    theme: PropTypes.object
-  },
+  contextType: StyleProvider.Context,
 
   getDefaultProps() {
     return {

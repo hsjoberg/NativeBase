@@ -5680,9 +5680,9 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-"native-base-shoutem-theme@github:hsjoberg/native-base-shoutem-theme#690325f33812af51ec7498a30267b8f99b598084":
+"native-base-shoutem-theme@github:hsjoberg/native-base-shoutem-theme#5e261ea75b56cf346be4eb094016e77016d81543":
   version "0.3.1"
-  resolved "https://codeload.github.com/hsjoberg/native-base-shoutem-theme/tar.gz/690325f33812af51ec7498a30267b8f99b598084"
+  resolved "https://codeload.github.com/hsjoberg/native-base-shoutem-theme/tar.gz/5e261ea75b56cf346be4eb094016e77016d81543"
   dependencies:
     hoist-non-react-statics "^1.0.5"
     lodash "^4.17.14"

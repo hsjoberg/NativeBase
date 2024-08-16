@@ -6,15 +6,13 @@ import {
   TouchableNativeFeedback,
   View
 } from 'react-native';
-import { connectStyle } from 'native-base-shoutem-theme';
+import { connectStyle, StyleProvider } from 'native-base-shoutem-theme';
 
 import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 import variable from '../theme/variables/platform';
 
 class ListItem extends Component {
-  static contextTypes = {
-    theme: PropTypes.object
-  };
+  static contextType = StyleProvider.Context;
   render() {
     const variables = this.context.theme
       ? this.context.theme['@@shoutem.theme/themeStyle'].variables

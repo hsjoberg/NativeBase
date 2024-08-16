@@ -8,7 +8,7 @@ import {
   TouchableNativeFeedback,
   StyleSheet
 } from 'react-native';
-import { connectStyle } from 'native-base-shoutem-theme';
+import { connectStyle, StyleProvider } from 'native-base-shoutem-theme';
 
 import variable from '../theme/variables/platform';
 import { PLATFORM } from '../theme/variables/commonColor';
@@ -17,10 +17,6 @@ import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 import { Text } from './Text';
 
 class Button extends Component {
-  static contextTypes = {
-    theme: PropTypes.object
-  };
-
   getInitialStyle() {
     return {
       borderedBtn: {
@@ -34,6 +30,8 @@ class Button extends Component {
       }
     };
   }
+
+  static contextType = StyleProvider.Context;
 
   prepareRootProps() {
     const { style, ...others } = this.props;

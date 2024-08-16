@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connectStyle } from 'native-base-shoutem-theme';
+import { connectStyle, StyleProvider } from 'native-base-shoutem-theme';
 import { get } from 'lodash';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -24,10 +24,6 @@ import mapPropsToStyleNames from '../utils/mapPropsToStyleNames';
 const Icomoon = createIconSetFromIcoMoon(icoMoonConfig);
 
 class IconNB extends Component {
-  static contextTypes = {
-    theme: PropTypes.object
-  };
-
   constructor(props) {
     super(props);
     this.setIcon(props.type);
@@ -89,6 +85,8 @@ class IconNB extends Component {
         this.Icon = Ionicons;
     }
   }
+
+  static contextType = StyleProvider.Context;
 
   render() {
     return <this.Icon ref={c => (this._root = c)} {...this.props} />;
