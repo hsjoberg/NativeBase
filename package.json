@@ -26,9 +26,8 @@
       "node_modules/(?!react-native|@shoutem|react-clone-referenced-element|native-base-shoutem-theme)"
     ]
   },
-  "version": "2.15.3",
+  "version": "2.15.4",
   "license": "Apache-2.0",
-  "private": false,
   "dependencies": {
     "@codler/react-native-keyboard-aware-scroll-view": "1.0.1",
     "@react-native-community/datetimepicker": "^3.0.2",
@@ -42,7 +41,7 @@
     "fs-extra": "^2.0.0",
     "jest-react-native": "^18.0.0",
     "lodash": "^4.17.14",
-    "native-base-shoutem-theme": "github:hsjoberg/native-base-shoutem-theme#5e261ea75b56cf346be4eb094016e77016d81543",
+    "native-base-shoutem-theme": "github:hsjoberg/native-base-shoutem-theme#036c009716d35a78b730a275891f7038881c2f22",
     "opencollective-postinstall": "^2.0.2",
     "print-message": "^2.1.0",
     "prop-types": "^15.5.10",
@@ -77,7 +76,6 @@
   "homepage": "https://github.com/GeekyAnts/NativeBase#readme",
   "main": "dist/src/index.js",
   "typings": "./index.d.ts",
-  "optionalDependencies": {},
   "peerDependencies": {
     "react": ">=16.4.1",
     "react-native": ">=0.56.0"
